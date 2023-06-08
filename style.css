@@ -1,12 +1,101 @@
-
-nav{display: inline;
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
 }
-nav ul{display: inline;
-    margin-left: auto;
-    margin-right: auto;
+body{
+    background-color: #000000;
 }
-
-nav ul li {display: inline;
-
+.card-area{    
+    background: linear-gradient(98.76deg, #1C0E0E 24.39%, #1C1833 81.33%);
+    border-radius: 50px;
+}
+/* NAVBAR */
+nav{display: flex;
+    padding: 45px 150px;
+    margin-left: 450px;
+}
+nav #marvel-logo{
+    width: 150px;
+    height: 62.3px;
+    margin-right: 150px;
+}
+nav ul li{    
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #ffffff;
+    margin: 5px;
+}
+nav ul li button img {
+    width: 36.67px;
+    height: 36.67px;
+}
+nav ul li:first-child{
+    color: #E60F0F;
+}
+nav div {
+    border-left: solid #ffffff;
+}
+/* MAIN */
+main{
+    display: flex;
+}
+.no-way-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.no-way-home #marvel-studios{
+    width: 170px;
+    margin: 5px;
+}
+.no-way-home #spider-man-logo{
+    width: 852.98px; 
+    margin: 5px;
+}
+.no-way-home #no-way-home{
+    width: 366px;
+    margin: 5px;
+    transform: rotate(-5.58deg);
+}
+.no-way-home p{
+    color: #ffffff;
+    width: 1045px;
+    font-weight: 500;
+    font-size:30px;
+    line-height: 36.57px;
+}
+.play {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    margin-left: 50px;
+}
+.play-button img{
+    width: 50px;
+    height: 50px;
+}
+.play p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    padding: 0px 20px;
+}
+.info-button{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    border-radius: 25px;
+    
+    border: solid #ffffff;
+}
+main img #spidey-99{
+    height: 1353px;
 }
