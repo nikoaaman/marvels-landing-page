@@ -24,7 +24,7 @@ for (let character of marvel_characters){
 }
 
 
-const xmen_characters = [
+const xmenCharacters = [
     {   "name": "Beast" 
     },
     {   "name": "Wolverine"
@@ -40,7 +40,7 @@ const xmen_characters = [
     {   "name": "Firestar" 
     }
 ]
-const avengers_characters = [
+const avengersCharacters = [
     {   "name": "Iron Man" 
     },
     {   "name": "Quicksilver"
@@ -59,13 +59,39 @@ const avengers_characters = [
     }
 ]
 
-function findCommonCharacter(xmen_characters, avengers_characters){
-    for (let character of xmen_characters){
-        for (let member of avengers_characters){
+// function findCommonCharacter(xmenCharacters, avengersCharacters){
+//     if (!Array.isArray(xmenCharacters)){
+//         return console.log("xmenCharacters is not an array")
+//     }
+//     if (!Array.isArray(avengersCharacters)){
+//         return console.log("avengersCharacters is not an array")
+//     }
+//     for (let character of xmenCharacters){
+//         for (let member of avengersCharacters){
+//             if (character.name === member.name) {
+//                 console.log(character.name+" is a member of both X-Men and the Avengers")
+//             }
+//         }
+// }
+// }
+// findCommonCharacter()
+
+
+const findCommonCharacter = (arr1, arr2) => {
+    if (!Array.isArray(arr1)){
+        return console.log("parameter 1 is not an array")
+    }
+    if (!Array.isArray(arr2)){
+        return console.log("parameter 2 is not an array")
+    }
+    for (let character of arr1){
+        for (let member of arr2){
             if (character.name === member.name) {
                 console.log(character.name+" is a member of both X-Men and the Avengers")
             }
         }
 }
 }
-findCommonCharacter(xmen_characters,avengers_characters)
+findCommonCharacter(xmenCharacters,avengersCharacters)
+
+// nombre y fecha. sortear por fecha 
